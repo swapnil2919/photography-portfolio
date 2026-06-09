@@ -2,14 +2,16 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowUp } from 'react-icons/fi';
 
-import Navbar       from './components/Navbar';
-import Hero         from './components/Hero';
-import About        from './components/About';
-import Categories   from './components/Categories';
-import Services     from './components/Services';
-import Testimonials from './components/Testimonials';
-import Contact      from './components/Contact';
-import Footer       from './components/Footer';
+import Navbar          from './components/Navbar';
+import Hero            from './components/Hero';
+import About           from './components/About';
+import Categories      from './components/Categories';
+import Services        from './components/Services';
+import Testimonials    from './components/Testimonials';
+import Contact         from './components/Contact';
+import Footer          from './components/Footer';
+import WhatsAppButton   from './components/WhatsAppButton';
+import InstagramButton  from './components/InstagramButton';
 
 export default function App() {
   const [showTop, setShowTop] = useState(false);
@@ -30,6 +32,10 @@ export default function App() {
       <Testimonials />
       <Contact />
       <Footer />
+
+      {/* Floating action buttons */}
+      <InstagramButton />
+      <WhatsAppButton />
 
       {/* Scroll-to-top button */}
       <AnimatePresence>
